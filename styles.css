@@ -4,7 +4,7 @@
     --botao-azul: #167BF7; 
     --cor-de-fundo: #00030c;
     --fonte-principal: 'Inter';
-    --botao-azul--efeito: #3c92fa; 
+    --botao-azul--efeito: #9b6bf5; 
 }
 *{
     margin: 0;
@@ -93,20 +93,24 @@ body{
     margin-top: 1em;
 }
 
-.dispositivos{
+.dispositivos {
     text-align: center;
 }
-
+.dispositivos__titulo{
+    text-align: center;
+}
 .dispositivos__lista{
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 5em 0;
+    text-align: center;
 }
 
 .dispositivos__lista h3{
     font-size: 32px;
     color: var(--branco-principal);
+    text-align: center;
 }
 
 .dispositivos__titulo{
@@ -161,12 +165,29 @@ body{
     font-size: 14px;
 }
 
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+        background-image: none;
+    }
+    .container__imagem{
+        width: 50vw;
+    }
+    .container__caixa{
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin: 0;
+        text-align: center;
+    }
+    .secundario__imagem{
+        width: 50vw;
+    }
+    .dispositivos__lista{
+        display: block;
+    }
+    .rodape__lista{
+        display: block;
+    }
 
-/*
-
-.main-section {
-    background-image: url("img/Background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-*/
